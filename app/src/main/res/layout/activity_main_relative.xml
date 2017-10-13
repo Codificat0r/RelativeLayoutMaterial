@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.relativelayoutmaterial.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgCity"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/malaga" />
+
+    <!-- Los iconos como este deben der de 36dp y deben estar posicionados si va a ir en un materialdesign como
+    el que estamos haciendo en esa posición.-->
+    <ImageView
+        android:id="@+id/imgFavorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/btn_star_big_off"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="182dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <!-- Debajo de la imagen y alineado con el padre. Esto ultimo ya lo hace por defecto, pero lo ponemos igual.-->
+    <TextView
+        android:id="@+id/txtMonument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtMonument"
+        android:layout_below="@+id/imgCity"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/txtDateVisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtDateVisit"
+        android:layout_below="@+id/txtMonument"
+        android:layout_alignStart="@+id/txtMonument"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/edtDateVisit"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtDateVisit"
+        android:layout_toEndOf="@+id/txtDateVisit"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/txtTypeVisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtTypeVisit"
+        android:layout_alignStart="@id/txtDateVisit"
+        android:layout_below="@id/txtDateVisit"
+        android:layout_marginTop="30dp"
+        android:labelFor="@id/edtTypeVisit" />
+
+    <EditText
+        android:id="@+id/edtTypeVisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_alignStart="@+id/edtDateVisit"
+        android:layout_alignBaseline="@+id/txtTypeVisit"
+        android:layout_alignEnd="@id/edtDateVisit" />
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnBuy"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@id/imgFavorites"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnReserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnReserve"
+        android:layout_toStartOf="@id/btnBuy"
+        android:layout_alignBaseline="@id/btnBuy"/>
+</RelativeLayout>
