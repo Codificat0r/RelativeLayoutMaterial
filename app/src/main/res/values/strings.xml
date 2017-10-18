@@ -5,4 +5,6 @@
     <string name="txtTypeVisit">Tipo entrada</string>
     <string name="btnReserve">Reservar</string>
     <string name="btnBuy">Comprar</string>
+    <string name="contentImgCity">Catedral de Málaga</string>
+    <string name="contentImgFavorites">Favoritos</string>
 </resources>

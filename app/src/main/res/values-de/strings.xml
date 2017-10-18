@@ -5,5 +5,7 @@
     <string name="btnBuy">Käuflich erwerben</string>
     <string name="txtDateVisit">Besuchsdatum</string>
     <string name="txtMonument">Kathedrale</string>
-    <string name="txtTypeVisit">Art des Eintrags</string>
+    <string name="txtTypeVisit">Art des Eintrags Wagen</string>
+    <string name="contentImgCity">Kathedrale von Malaga</string>
+    <string name="contentImgFavorites">Main Favorites</string>
 </resources>

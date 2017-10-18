@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/txtDateVisit"
         app:layout_constraintLeft_toRightOf="@+id/txtDateVisit" />
 
@@ -85,9 +85,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="0dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/txtTypeVisit"
-        android:layout_marginLeft="0dp"
         app:layout_constraintLeft_toLeftOf="@+id/edtDateVisit" />
 
     <Button

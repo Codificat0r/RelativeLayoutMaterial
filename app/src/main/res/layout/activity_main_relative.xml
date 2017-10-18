@@ -56,7 +56,7 @@
         android:layout_alignBaseline="@+id/txtDateVisit"
         android:layout_toEndOf="@+id/txtDateVisit"
         android:ems="10"
-        android:inputType="date"
+        android:inputType="text"
         android:layout_marginLeft="10dp"/>
 
     <TextView
@@ -66,18 +66,17 @@
         android:text="@string/txtTypeVisit"
         android:layout_alignStart="@id/txtDateVisit"
         android:layout_below="@id/txtDateVisit"
-        android:layout_marginTop="30dp"
-        android:labelFor="@id/edtTypeVisit" />
+        android:layout_marginTop="30dp" />
 
     <EditText
         android:id="@+id/edtTypeVisit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:layout_alignStart="@+id/edtDateVisit"
         android:layout_alignBaseline="@+id/txtTypeVisit"
-        android:layout_alignEnd="@id/edtDateVisit" />
+        android:layout_alignEnd="@id/edtDateVisit"
+        android:layout_alignStart="@+id/edtDateVisit"
+        android:ems="10"
+        android:inputType="text" />
 
     <Button
         android:id="@+id/btnBuy"
